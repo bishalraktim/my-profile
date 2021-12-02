@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  color: royalblue;
+  padding-top: 50px;
+}
+
+h2 {
+  color: royalblue;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}
+
+#image {
+  border-radius: 50%;
+  vertical-align: middle;
+  /* border: 1px solid black; */
+}
+
+#size {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+#heading {
+  background-color: #999ecc;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 43px;
+}
+
+#heading div {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: auto;
+}
+
+#heading div a:hover {
+  background-color: whitesmoke;
+  transition: 0.5s ease-out;
+  font-size: 17px;
+  padding: 10px;
+  color: black;
+  box-sizing: border-box;
+}
+
+#heading div a {
+  color: white;
+}
+
+#profile-image {
+  background-image: url("image-portfolio.jpeg");
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+}
+
+.homes {
+  margin-top: -450px;
+  color: white;
+  font-size: 80px;
+}
+
+.home {
+  margin-top: -40px;
+  color: white;
+  font-size: 30px;
+}
+
+#about {
+  margin-top: 20%;
+}
+
+i {
+  color: red;
+}
+
+div center i {
+  color: white;
+  padding: 5px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+div center i:hover {
+  color: rgb(61, 224, 216);
+  cursor: pointer;
+}
