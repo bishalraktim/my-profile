@@ -1,93 +1,168 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-h1 {
-  color: royalblue;
-  padding-top: 50px;
-}
-
-h2 {
-  color: royalblue;
-}
-
 p {
   text-align: justify;
 }
 
-a {
-  text-decoration: none;
-}
-
-#image {
+/* #image {
   border-radius: 50%;
   vertical-align: middle;
-  /* border: 1px solid black; */
-}
+  border: 1px solid black;
+} */
 
 #size {
   padding-top: 10px;
   font-size: 20px;
 }
 
-#heading {
-  background-color: #999ecc;
+/* Navbar begins */
+nav {
+  background-color: #182f60;
+}
+
+#displayItems {
   display: flex;
   justify-content: center;
   width: 100%;
-  position: fixed;
-  top: 0;
-  height: 43px;
 }
 
-#heading div {
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
-  font-size: 20px;
+.navbar-light .navbar-nav .nav-link {
+  color: #ffff;
+  padding: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
   font-weight: bold;
-  cursor: pointer;
-  margin: auto;
 }
 
-#heading div a:hover {
-  background-color: whitesmoke;
-  transition: 0.5s ease-out;
-  font-size: 17px;
-  padding: 10px;
-  color: black;
-  box-sizing: border-box;
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ff6e6e;
+  background-color: #ffff;
+  transition: ease-in 0.5s;
+  transform: scale(1.1);
 }
 
-#heading div a {
-  color: white;
+.dropdown-item:hover {
+  background-color: #182f60;
+  color: #ffffff;
 }
 
+.navbar-light .navbar-toggler {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #ffffff;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 630px) {
+  .navbar-light .navbar-nav .nav-link {
+    padding: 10px;
+  }
+}
+/* Navbar ends */
+
+/* Profile image begins */
 #profile-image {
-  background-image: url("image-portfolio.jpeg");
-  height: 250px;
+  background-image: url("https://i.ibb.co/C0yxdPv/photo-1488998427799-e3362cec87c3-ixlib-rb-1-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 650px;
   width: 100%;
 }
+/* Profile image ends */
 
-.homes {
-  margin-top: -450px;
-  color: white;
-  font-size: 80px;
+/* Profile items begin */
+#profile-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -370px;
 }
 
-.home {
-  margin-top: -40px;
-  color: white;
-  font-size: 30px;
+#profile-items div img {
+  height: 80px;
+  width: 80px;
+  padding: 17px;
+  border-radius: 30%;
 }
+
+#profile-items .heading {
+  color: #182f60;
+  font-weight: bolder;
+  font-family: sans-serif;
+  font-size: 55px;
+}
+
+#profile-items div .subHeading {
+  color: #182f60;
+  font-weight: bolder;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 750px) {
+  #profile-items .heading {
+    color: #ff5c5c;
+  }
+
+  #profile-items div .subHeading {
+    color: #ff5c5c;
+  }
+}
+
+@media screen and (max-width: 332px) {
+  #profile-items div img {
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+  }
+
+  #profile-items .heading {
+    font-size: 30px;
+  }
+
+  #profile-items div .subHeading {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #profile-items .heading {
+    font-size: 44px;
+  }
+
+  #profile-items div .subHeading {
+    font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 441px) {
+  #profile-items .heading {
+    font-size: 40px;
+  }
+
+  #profile-items div .subHeading {
+    font-size: 25px;
+  }
+
+  #profile-items div img {
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+  }
+}
+/* Profile items end */
 
 #about {
   margin-top: 20%;
