@@ -13,6 +13,30 @@ nav {
   background-color: #182f60;
 }
 
+#giveLink1 {
+  cursor: pointer;
+}
+
+#giveLink2 {
+  cursor: pointer;
+}
+
+#giveLink3 {
+  cursor: pointer;
+}
+
+#giveLink4 {
+  cursor: pointer;
+}
+
+#giveLink5 {
+  cursor: pointer;
+}
+
+#giveLink6 {
+  cursor: pointer;
+}
+
 #displayItems {
   display: flex;
   justify-content: center;
@@ -153,6 +177,10 @@ nav {
   background-color: #359fa9;
 }
 
+#giveLink7 {
+  cursor: pointer;
+}
+
 .picture {
   margin: 5% 10% 0 10%;
 }
@@ -213,6 +241,10 @@ nav {
 /* About section ends  */
 
 /* Education section begins */
+#giveLink8 {
+  cursor: pointer;
+}
+
 .progress {
   height: 40px;
   border-radius: 0;
@@ -268,16 +300,17 @@ nav {
 /* Education section ends */
 
 /* Work section begins */
+#giveLink9 {
+  cursor: pointer;
+}
+
 .check {
   display: flex;
   justify-content: center;
 }
 
 .projects {
-  /* display: flex;
-  justify-content: space-evenly; */
   position: relative;
-  /* margin-left: 20px; */
   width: 230px;
   cursor: pointer;
 }
@@ -313,7 +346,6 @@ nav {
   position: absolute;
   top: 0;
   transform: scale(0);
-  /* background-color: #359fa9; */
 }
 
 .texts {
@@ -351,14 +383,15 @@ nav {
 /* Work section ends */
 
 /* Form/Contact section begins  */
+#giveLink10 {
+  cursor: pointer;
+}
+
 iframe {
   width: 100%;
 }
 
 .contacts {
-  /* display: flex;
-  justify-content: space-evenly; */
-  /* width: 100%; */
   padding: 25px;
   background-color: #359fa9;
 }
@@ -403,7 +436,13 @@ iframe {
     width: 100%;
   }
 }
-/* Form/Contact section begins  */
+
+@media screen and (max-width: 767px) {
+  #cont-btn {
+    margin-bottom: 17px;
+  }
+}
+/* Form/Contact section ends */
 
 /* Top arrow begins */
 .topArrow {
@@ -464,4 +503,4 @@ iframe {
     align-items: center;
   }
 }
-/* Skill sets begin */
+/* Skill sets end*/
