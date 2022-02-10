@@ -2,6 +2,9 @@ $(document).ready(function () {
   // $(this).scrollTop(0);
 });
 
+// alert(`screen width ${screen.width}`); // width of the screen
+// alert(`inner width of the browser window ${window.outerWidth}`); // inner width of the browser window
+
 function topArrow() {
   $(window).scrollTop(0);
 }
